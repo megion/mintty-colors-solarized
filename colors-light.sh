@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#echo -ne   '\eP\e]10;#839496\a'  # Foreground   -> base0
-#echo -ne   '\eP\e]11;#002B36\a'  # Background   -> base03
+#echo -ne   '\eP\e]10;#657B83\a'  # Foreground   -> base00
+#echo -ne   '\eP\e]11;#FDF6E3\a'  # Background   -> base3
 #echo -ne   '\eP\e]12;#DC322F\a'  # Cursor       -> red
 #echo -ne  '\eP\e]4;0;#073642\a'  # black        -> Base02
 #echo -ne  '\eP\e]4;8;#002B36\a'  # bold black   -> Base03
@@ -22,7 +22,7 @@
 
 colorsArray=()
 
-colorsArray[0]='\eP\e]10;#839496\a'  # Foreground   -> base0
-colorsArray[1]='\eP\e]11;#002B36\a'  # Background   -> base03
+colorsArray[0]='\eP\e]10;#657B83\a'  # Foreground   -> base00
+colorsArray[1]='\eP\e]11;#FDF6E3\a'  # Background   -> base3
 colorsArray[2]='\eP\e]12;#DC322F\a'  # Cursor       -> red
 colorsArray[3]='\eP\e]4;0;#073642\a'  # black        -> Base02
