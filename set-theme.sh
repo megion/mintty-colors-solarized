@@ -23,12 +23,12 @@ set_tmux_color() {
     #local double_e="e\e"
     #local pattern_e="\e"
     local tmux_color=${color//"\e"/"\e\e"}
-    echo '\ePtmux'$tmux_color'\e\\' 
+    echo -ne '\ePtmux;'$tmux_color'\e\\' 
 }
 
 set_color() {
     local color=$1
-    echo $color 
+    echo -ne $color 
 }
 
 for item in ${colorsArray[*]}
