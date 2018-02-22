@@ -16,12 +16,11 @@ else
 fi
 
 set_tmux_color() {
+    # see https://superuser.com/a/894781
     #1. double all occurrences of \e
     #2. prepend \ePtmux;
     #3. append \e\\
     local color=$1
-    #local double_e="e\e"
-    #local pattern_e="\e"
     local tmux_color=${color//"\e"/"\e\e"}
     echo -ne '\ePtmux;'$tmux_color'\e\\' 
 }
